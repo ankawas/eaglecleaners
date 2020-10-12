@@ -9,18 +9,20 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Navigation bar */
 .navbar {
-  padding: 0 0 4rem;
+  /* height: 15%; */
+  padding: 0 10%;
 }
 
 .eagleLogo {
   width: 8%;
   margin-right: 2%;
+  /* text-align: left; */
 }
 
 .eagleLogoText {
   font-family: "Montserrat-light";
-  font-size: 3.5rem;
-  margin-right: 200px;
+  font-size: 3rem;
+  margin-right: 3rem;;
 }
 
 .nav-item {
@@ -34,12 +36,26 @@ h1, h2, h3, h4, h5, h6 {
   /* color: white; */
 }
 
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
+@media (min-width: 1000px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
 
 /* Title Section */
 #title {
   background-color: #28398d;
   color: white;
+  padding-top: 10%;
 }
 
 .mainHeader {
@@ -174,6 +190,16 @@ a:link {
 /* For Mobiles */
 
 @media (max-width: 900px) {
+
+  .navbar{
+  padding: 0 2%;
+}
+  .eagleLogo {
+    width: 12%;
+    margin-right: 2%;
+    /* text-align: left; */
+  }
+
   .eagleLogoText {
     font-size: 3.5rem;
     color: black;
@@ -181,7 +207,7 @@ a:link {
   }
 
   .container-fluid {
-    padding: 2%;
+    padding: 20% 5%;
   }
 
   #features {
