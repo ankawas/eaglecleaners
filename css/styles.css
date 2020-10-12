@@ -174,9 +174,10 @@ a:link {
 /* For Mobiles */
 
 @media (max-width: 900px) {
-  .navbar-brand {
-    font-size: 5rem;
+  .eagleLogoText {
+    font-size: 3.5rem;
     color: black;
+    margin-right: 0;
   }
 
   .container-fluid {
@@ -193,7 +194,7 @@ a:link {
 
   .mainHeader {
     font-family: "Montserrat-Bold";
-    font-size: 5rem;
+    font-size: 4rem;
     color: white;
     text-align: center;
   }
