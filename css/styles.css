@@ -28,8 +28,8 @@ body {
 
 @media (max-width: 900px) {
   .navbar-brand {
-    font-size: 3.5rem;
-    color: white;
+    font-size: 5rem;
+    color: black;
   }
 
   .container-fluid {
@@ -47,7 +47,7 @@ body {
   .mainHeader {
     font-family: "Montserrat-Black";
     font-size: 5rem;
-    color: white;
+    color: black;
     text-align: center;
   }
 }
