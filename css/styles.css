@@ -7,7 +7,6 @@ body {
   color: white;
 }
 
-
 .appButtonLink {
   margin: 20px auto;
   padding: 5%;
@@ -30,9 +29,27 @@ body {
 @media (max-width: 900px) {
   .navbar-brand {
     font-size: 3.5rem;
-    color: red;
+    color: white;
   }
 
+  .container-fluid {
+    padding: 2%;
+  }
+
+  #features {
+    padding: 0;
+  }
+
+  .feature-box {
+    padding: 2%;
+  }
+
+  .mainHeader {
+    font-family: "Montserrat-Black";
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+  }
 }
 
 .nav-item {
@@ -68,14 +85,13 @@ h3 {
   font-family: "Montserrat-bold"
 }
 
-a{
+a {
   color: white;
 }
 
 /* p {
   color: #8f8f8f;
 } */
-
 .eagleLogoText {
   float: right;
 }
@@ -95,8 +111,6 @@ a:link {
   text-decoration: none;
   color: white;
 }
-
-
 
 /* Features Section */
 #features {
@@ -179,12 +193,11 @@ a:link {
 }
 
 #footer {
-
   text-align: center;
   background-color: #28398d;
 }
 
-.footerText{
+.footerText {
   font-family: "Montserrat-bold";
   color: white;
 }
@@ -193,6 +206,6 @@ a:link {
   margin: 1% 3% 0 0;
 }
 
-.callToAction{
+.callToAction {
   color: white;
 }
