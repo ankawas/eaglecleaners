@@ -253,10 +253,26 @@ a:link {
     padding: 2%;
   }
 
+  .webHeader{
+    text-align: center;
+  }
+
   .mainHeader {
-    font-family: "Montserrat-Bold";
+    /* font-family: "Montserrat-Bold"; */
     font-size: 4rem;
     color: white;
     text-align: center;
   }
+
+  .mainSubHeader {
+    font-family: "Montserrat";
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+  }
+
+  .appButtonLink{
+    text-align: center;
+  }
+
 }
