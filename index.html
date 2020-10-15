@@ -29,13 +29,10 @@
 
   <section id="title">
     <div class="container-fluid">
-
-
       <!-- Nav Bar -->
-
-      <nav class="navbar navbar-expand-xl navbar-dark fixed-top bg-dark">
+      <nav class="navbar navbar-expand-xl navbar-dark fixed-top">
         <img class="eagleLogo" src="https://www.flaticon.com/svg/static/icons/svg/1198/1198073.svg" alt="eagle-logo">
-        <a class="navbar-brand eagleLogoText" href="#">Eagle Cleaners</a>
+        <a class="navbar-brand eagleLogoText" href="#">Company Name</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -50,14 +47,12 @@
             <li class="nav-item">
               <a class="nav-link" href="#pricing">Pricing</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
+            </li> -->
           </ul>
-          <form class="form-inline mt-2 mt-md-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
+          <a class="btnCleaner btn btn-lg btn-outline-dark" href="loginPage.html" role="button">Login</a>
+          <a class="btnCleaner btn btn-lg btn-outline-dark" href="signupPage.html" role="button">Sign Up</a>
         </div>
       </nav>
 
@@ -65,16 +60,17 @@
       <!-- Title -->
       <div class="row">
         <div class="col-lg-6 webHeader">
-          <h1 class="mainHeader">Get in touch with the cleaners nearby.</h1>
+          <h1 class="mainHeader">Tailored Cleaning bid.</h1>
+          <h3 class="mainSubHeader">Company SubText goes here</h3>
           <div class="appButtonLink">
-            <button type="button" class="btn btn-dark btn-lg downloadButton"><i class="fab fa-apple"></i> Download</button>
-            <button type="button" class="btn btn-outline-light btn-lg downloadButton"><i class="fab fa-google-play"></i> Download</button>
+            <button type="button" class="btn btn-dark btn-lg downloadButton"><i class="fas fa-user-shield"></i> Become a Cleaner</button>
+            <button type="button" class="btn btn-outline-light btn-lg downloadButton"><i class="fas fa-passport"></i> Find local bids</button>
           </div>
 
         </div>
         <div class="col-lg-6">
           <!-- <img class="mainImg" src="https://media.istockphoto.com/photos/person-cleaning-carpet-with-vacuum-cleaner-picture-id1146967802?k=6&m=1146967802&s=612x612&w=0&h=g3Uij3DwIkhduV-hyI5PRT08LX_mY61nc9SS7v4CSDc=" alt="cleaning-main"> -->
-          <div id="mainImgCarousel" class="carousel slide" data-ride="carousel" data-interval=2000>
+          <!-- <div id="mainImgCarousel" class="carousel slide" data-ride="carousel" data-interval=2000>
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="https://images.unsplash.com/photo-1563453392212-326f5e854473?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" class="d-block w-100" alt="...">
@@ -94,12 +90,72 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
             </a>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Pricing -->
+
+  <section id="pricing">
+
+    <h2 class="pricingText">What kind of service are you looking for?</h2>
+    <p>Simple and affordable price plans for all your cleaning needs.</p>
+
+    <div class="row">
+
+      <!-- <div class="pricingColumn col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Individual</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="priceSubHeader">Free</h2>
+            <p>5 Matches Per Day</p>
+            <p>10 Messages Per Day</p>
+            <p>Unlimited App Usage</p>
+            <button type="button" class="btn btn-lg btn-block btn-outline-dark">Sign Up</button>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="pricingColumn col-lg-6 col-md-12">
+        <div class="card">
+          <div class="card-header">
+            <i class="pricingIcon fas fa-home fa-6x"></i>
+            <h3>Residential</h3>
+          </div>
+          <div class="card-body">
+            <!-- <h2 class="priceSubHeader">$49 / mo</h2> -->
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <button type="button" class="btn btn-lg btn-block btn-dark">Learn More</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pricingColumn col-lg-6 col-md-12">
+        <div class="card">
+          <div class="card-header">
+            <i class="pricingIcon fas fa-building fa-6x"></i>
+            <h3>Commercial</h3>
+          </div>
+          <div class="card-body">
+            <!-- <h2 class="priceSubHeader">$99 / mo</h2> -->
+            <p>Pirority Listing</p>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <button type="button" class="btn btn-lg btn-block btn-dark">Learn More</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
 
   <!-- Features -->
 
@@ -127,7 +183,7 @@
 
   <!-- Testimonials -->
 
-  <section id="testimonials">
+  <!-- <section id="testimonials">
     <div id="testimonialcarousel" class="carousel slide" data-ride="false">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -149,7 +205,7 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-  </section>
+  </section> -->
 
 
   <!-- Press -->
@@ -162,74 +218,13 @@
 
   </section> -->
 
-
-  <!-- Pricing -->
-
-  <section id="pricing">
-
-    <h2 class="pricingText">A Plan for Every Cleaning Need.</h2>
-    <p>Simple and affordable price plans for all your cleaning needs.</p>
-
-    <div class="row">
-
-      <div class="pricingColumn col-lg-4 col-md-6">
-        <div class="card">
-          <div class="card-header">
-            <h3>Individual</h3>
-          </div>
-          <div class="card-body">
-            <h2 class="priceSubHeader">Free</h2>
-            <p>5 Matches Per Day</p>
-            <p>10 Messages Per Day</p>
-            <p>Unlimited App Usage</p>
-            <button type="button" class="btn btn-lg btn-block btn-outline-dark">Sign Up</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="pricingColumn col-lg-4 col-md-6">
-        <div class="card">
-          <div class="card-header">
-            <h3>Cleaners</h3>
-          </div>
-          <div class="card-body">
-            <h2 class="priceSubHeader">$49 / mo</h2>
-            <p>Unlimited Matches</p>
-            <p>Unlimited Messages</p>
-            <p>Unlimited App Usage</p>
-            <button type="button" class="btn btn-lg btn-block btn-dark">Sign Up</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="pricingColumn col-lg-4">
-        <div class="card">
-          <div class="card-header">
-            <h3>Business</h3>
-          </div>
-          <div class="card-body">
-            <h2 class="priceSubHeader">$99 / mo</h2>
-            <p>Pirority Listing</p>
-            <p>Unlimited Matches</p>
-            <p>Unlimited Messages</p>
-            <p>Unlimited App Usage</p>
-            <button type="button" class="btn btn-lg btn-block btn-dark">Sign Up</button>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-  </section>
-
-
   <!-- Call to Action -->
 
   <section id="cta">
 
     <h3 class="callToAction">Find the best cleaners near you.</h3>
-    <button type="button" class="btn btn-dark btn-lg downloadButtonFooter"><i class="fab fa-apple"></i> Download</button>
-    <button type="button" class="btn btn-outline-light btn-lg downloadButtonFooter"><i class="fab fa-google-play"></i> Download</button>
+    <button type="button" class="btn btn-dark btn-lg downloadButtonFooter"><i class="fas fa-user-shield"></i> Become a Cleaner</button>
+    <button type="button" class="btn btn-outline-light btn-lg downloadButton"><i class="fas fa-passport"></i> Find local bids</button>
   </section>
 
 

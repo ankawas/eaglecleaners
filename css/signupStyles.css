@@ -1,0 +1,30 @@
+html, body {
+  /* background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg'); */
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  /* height: 100%; */
+  /* font-family: 'Numans', sans-serif; */
+  background-color: #28398D;
+}
+
+.container {
+  align-content: center;
+  padding: 2% 0;
+  background-color: #1D2A69;
+  color: white;
+  width: 40%;
+  margin: 8% auto 0;
+}
+
+.colOr {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.googleSignup{
+  background-color: #E8B310;
+}
+
+.googleIcon {
+  color: #617BFF;
+}
