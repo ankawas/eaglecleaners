@@ -203,7 +203,7 @@ a:link {
 /* For Mobiles */
 @media (max-width: 1208px) {
   .navbar {
-    padding: 0 2%;
+    padding: 0 10%;
   }
 
   .eagleLogo {
@@ -223,14 +223,25 @@ a:link {
   }
 
   .nav-link {
-    font-size: 2rem;
+    font-size: 3rem;
+  }
+
+  .navbar-toggler {
+    width: 5rem;
+    padding-left: 0;
+  }
+
+  .navbar-toggler-icon {
+    width: 5rem;
+    height: 5rem;
   }
 
   .btnCleaner {
     margin: 1rem 0;
+    font-size: 3rem;
   }
 
-  #btnCleanerId{
+  #btnCleanerId {
     border-right-width: 2rem;
   }
 
