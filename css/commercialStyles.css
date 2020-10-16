@@ -25,15 +25,15 @@ body {
   background-color: Azure;
   font-family: "Monserrat";
   font-size: 1.5rem;
-  ;
+  /* position: relative; */
+  /* left: 5rem; */
+
 }
 
 .estimateContainer {
   background-color: #4ED4BB;
   border-radius: 10%;
-  padding-top: 2%;
 }
-
 
 .input-box {
   margin-left: 100px;
