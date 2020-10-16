@@ -1,47 +1,39 @@
 body {
   /* margin: auto; */
-  text-align: center;
   font-family: "Montserrat-Bold";
   /* padding: 5% 15%; */
+  text-align: center;
 }
 
-.mainTextSection{
+.mainTextSection {
   background-color: #28398d;
   margin-top: 1%;
   color: white;
   font-size: 1.5rem;
 }
 
-.detailsContainer{
-  margin: 0% auto;
-}
-
-.deatilsText{
+.deatilsText {
   padding: 2% 0;
   text-align: center;
   font-family: "Montserrat-Bold";
   font-size: 2rem;
 }
 
-.warningText{
-  font-size: 1rem;
-}
-
-.detailsContainer{
+.detailsContainer {
   text-align: center;
-  padding: 2% 0;
+  padding: 2% 20%;
   background-color: Azure;
-  margin-bottom: 20rem;
   font-family: "Monserrat";
-  font-size: 1.5rem;;
+  font-size: 1.5rem;
+  ;
 }
 
-.estimate-box{
-  text-align: center;
-  padding: 0 20%;
-  margin-left: 5%;
+.estimateContainer {
+  background-color: #4ED4BB;
+  border-radius: 10%;
 }
 
-.estimateContainer{
-  margin-left: 3%;
+.input-box {
+  margin-left: 100px;
+  margin-top: 20px;
 }
