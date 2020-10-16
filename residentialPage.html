@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Residential</title>
+  <link rel="stylesheet" href="css/residentialStyles.css">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <!-- Java script -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+
+  <!-- Font import -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Ubuntu:wght@300&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+
+  <!-- Font awesome -->
+
+  <script src="https://kit.fontawesome.com/a4eb572199.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <section class="mainTextSection">
+    <div class="container progressBar">
+      <div class="row pad-25-tb">
+        <div class="col-sm-3 col-xs-6">
+          <div class="progress-step active">1</div>
+          <span class="progress-text active">Estimate</span>
+        </div>
+        <div class="col-sm-3 col-xs-6">
+          <div class="progress-step ">2</div>
+          <span class="progress-text ">Schedule</span>
+        </div>
+        <div class="col-sm-3 col-xs-6">
+          <div class="progress-step ">3</div>
+          <span class="progress-text ">Account</span>
+        </div>
+        <div class="col-sm-3 col-xs-6">
+          <div class="progress-step ">4</div>
+          <span class="progress-text ">Confirm Details</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <p class="deatilsText">Please enter some details to get your quote.</p>
+  <div class="row detailsContainer">
+    <div class="col-md-4 col-sm-12 bg-light estimateContainer">
+
+      <div class="estimate-box">
+        <a href="#" data-toggle="modal" data-target="#priceModal">
+          <div class="price-prompt">Pricing</div>
+        </a>
+        <div class="row">
+          <div class="col-xs-12">
+            <p class="estimate-item">YOUR ESTIMATE:</p>
+          </div>
+          <div class="col-xs-12">
+            <div class="hour-wrapper">
+              <input type="number" class="cleaning-length estimator-input-hours" step=".25" min="2" max="10"
+                name="estimatedHours" value="">
+            </div>
+            <p class="hourly-price">Hours <span>@ <span class="estimator-quote-rate-display">$27.00</span>/hr</span></p>
+            <p class="warningText priority-warning estimator-override hidden">Attention: please be prepared to prioritize tasks
+              you'd like completed. Cleaning professional may not have enough time to clean entire house. Satisfaction
+              guarantee does not apply to appointments where suggested time has been lowered.</p>
+            <hr>
+            <p class="estimate-item"><span class="estimator-dollars">$60.75</span> <span class="taxes">+Tax</span></p>
+          </div>
+        </div>
+        <div class="row">
+          <hr>
+          <p class="estimate-explanation text-center">
+            <span class="estimator-note">First visit suggestion is 3.25 hours at $87.75 + Tax</span>
+            <br>
+          </p>
+        </div>
+      </div>
+      <div class="panel-group" id="accordion">
+
+
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#pricing">
+                <i class="icon icon-angle-right pull-left"></i>How does pricing work?
+              </a>
+            </h4>
+          </div>
+          <div id="pricing" class="panel-collapse collapse">
+            <div class="panel-body">
+              <p>Pricing is based on the following hourly rates:</p>
+              <ul>
+                <li class="location-information-market-data" data-markets="[1,2,5]" data-market-default="true"
+                  style="display: none;">Weekly/Every 2 Weeks = $27/hour</li>
+                <li class="location-information-market-data" data-markets="[3,4,6]" style="display: none;">Weekly/Every
+                  2 Weeks = $25/hour</li>
+                <li class="location-information-market-data" data-markets="[1,2,5]" data-market-default="true"
+                  style="display: none;">Monthly = $30/hour</li>
+                <li class="location-information-market-data" data-markets="[3,4,6]" style="display: none;">Monthly =
+                  $27.50/hour</li>
+                <li class="location-information-market-data" data-markets="[1,2,5]" data-market-default="true"
+                  style="display: none;">One-time = $33/hour</li>
+                <li class="location-information-market-data" data-markets="[3,4,6]" style="display: none;">One-time =
+                  $30/hour</li>
+              </ul>
+              <p>The system suggests how long your house will take based on the information you input here.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#included">
+                <i class="icon icon-angle-right pull-left"></i>What's included in the cleaning service?
+              </a>
+            </h4>
+          </div>
+          <div id="included" class="panel-collapse collapse">
+            <div class="panel-body">
+              <p><a href="#" data-toggle="modal" data-target="#standardCleaning">Click here</a> to get a listing of
+                what's included in the standard cleaning service.</p>
+              <p>You can also request specific tasks from your customer dashboard once you've created your account.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#reschedule">
+                <i class="icon icon-angle-right pull-left"></i>Can I cancel or reschedule?
+              </a>
+            </h4>
+          </div>
+          <div id="reschedule" class="panel-collapse collapse">
+            <div class="panel-body">
+              <p>Absolutely, you can cancel or reschedule anytime from your customer dashboard.</p>
+              <p>Please note, cancellations within 24 hours of a scheduled cleaning may be subject to a cancellation
+                charge.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#halfBath">
+                <i class="icon icon-angle-right pull-left"></i>What about powder rooms / half bathrooms?
+              </a>
+            </h4>
+          </div>
+          <div id="halfBath" class="panel-collapse collapse">
+            <div class="panel-body">
+              <p>Please count each one as a full bathroom while tallying the number of bathrooms in your house.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#help">
+                <i class="icon icon-angle-right pull-left"></i>I need more help!
+              </a>
+            </h4>
+          </div>
+          <div id="help" class="panel-collapse collapse">
+            <div class="panel-body">
+              <p>We're here to help!</p>
+              <p><a href="tel:1-866-743-9341"><i class="icon-phone"></i> 1-866-743-9341</a></p>
+              <p><a href="mailto:support@mopify.com"><i class="icon-envelope"></i> Email Support</a></p>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div> <!-- End info accordion -->
+    </div>
+    <div class="detailsContainer col-lg-6 col-md-8 col-sm-12">
+      <div class="input-box">
+        <div class="row">
+          <div class="col-sm-4">
+            <p>Region</p>
+          </div>
+          <div class="col-sm-8">
+            <div class="btn-group marg-center" data-toggle="buttons">
+              <select name="marketId" class="estimator-input location-information-market-select">
+                <option value="7">Austin</option>
+                <option value="3">Calgary</option>
+                <option value="4">Edmonton</option>
+                <option value="1" selected="">Ottawa</option>
+                <option value="2">Toronto</option>
+                <option value="5">Vancouver</option>
+                <option value="6">Winnipeg</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="input-box">
+        <div class="row">
+          <div class="col-sm-4">
+            <p>House Size (sq. ft.)</p>
+          </div>
+          <div class="col-sm-8">
+            <div class="btn-group marg-center" data-toggle="buttons">
+              <select name="squareFeet" class="estimator-input ">
+                <option value="500" selected="">101 - 500</option>
+                <option value="1000">501 - 1,000</option>
+                <option value="1500">1,001 - 1,500</option>
+                <option value="2000">1,501 - 2,000</option>
+                <option value="2500">2,001 - 2,500</option>
+                <option value="3000">2,501 - 3,000</option>
+                <option value="3500">3,001 - 3,500</option>
+                <option value="4000">3,501 - 4,000</option>
+                <option value="4500">4,001 - 4,500</option>
+                <option value="5000">4,501 - 5,000</option>
+                <option value="5500">5,001 - 5,500</option>
+                <option value="6000">5,501 - 6,000</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="input-box">
+        <div class="row">
+          <div class="col-sm-4">
+            <p>Bedrooms</p>
+          </div>
+          <div class="col-sm-8">
+            <div class="btn-group marg-center" data-toggle="buttons">
+              <select name="numberOfBedrooms" class="estimator-input ">
+                <option value="1" selected="">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+                <option value="5">Five</option>
+                <option value="6">Six</option>
+                <option value="7">Seven</option>
+                <option value="8">Eight</option>
+                <option value="9">Nine or more</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="input-box">
+        <div class="row">
+          <div class="col-sm-4">
+            <p>Bathrooms</p>
+          </div>
+          <div class="col-sm-8">
+            <div class="btn-group marg-center" data-toggle="buttons">
+              <select name="numberOfBathrooms" class="estimator-input ">
+                <option value="1" selected="">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+                <option value="5">Five</option>
+                <option value="6">Six</option>
+                <option value="7">Seven</option>
+                <option value="8">Eight</option>
+                <option value="9">Nine or more</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="input-box">
+            <div class="row">
+              <div class="col-xs-4">
+                <p>Dog(s)?</p>
+              </div>
+              <div class="col-xs-8 onoff-pad">
+                <div class="onoffswitch pull-left">
+                  <input type="checkbox" name="hasDogs" class="onoffswitch-checkbox estimator-input" id="hasDogs">
+                  <label class="onoffswitch-label" for="hasDogs">
+                    <div class="onoffswitch-inner"></div>
+                    <div class="onoffswitch-switch"></div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="input-box">
+            <div class="row">
+              <div class="col-xs-4">
+                <p>Cat(s)?</p>
+              </div>
+              <div class="col-xs-8 onoff-pad">
+                <div class="onoffswitch pull-left">
+                  <input type="checkbox" name="hasCats" class="onoffswitch-checkbox estimator-input" id="hasCats">
+                  <label class="onoffswitch-label" for="hasCats">
+                    <div class="onoffswitch-inner"></div>
+                    <div class="onoffswitch-switch"></div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row marg-25-bottom">
+        <div class="col-sm-12">
+          <button type="submit" class="signup-btn">Next</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>
