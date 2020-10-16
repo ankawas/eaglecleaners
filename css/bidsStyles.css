@@ -1,0 +1,45 @@
+body {
+  text-align: center;
+  font-family: "Monserrat-Bold";
+  padding: 0 15%;
+  background-color: #28398D;
+}
+
+h2{
+  font-size: 3rem;
+}
+
+h5{
+  font-size: 2rem;
+}
+
+.headerText{
+  padding-top: 4%;
+  color: white;
+}
+
+.bidSection{
+  margin-top: 2%;
+  padding: 2% 2%;
+}
+
+.filterColumn{
+  background-color: #4ED4BB;
+  text-align: left;
+  padding: 2% 5%;
+}
+
+.form-check-label{
+  font-size: 1.5rem;
+}
+
+.bidsContainer{
+  background-color: Azure;
+  text-align: left;
+  padding-left: 6%;
+}
+
+.bidList{
+  padding-top: 4%;
+  padding-right: 10%;
+}
