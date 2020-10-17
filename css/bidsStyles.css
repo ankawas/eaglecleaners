@@ -46,7 +46,7 @@ h5{
 }
 
 @media (max-width: 1208px) {
-  /* h1{
+  h1{
     font-size: 5rem;
   }
 
@@ -64,6 +64,6 @@ h5{
 
   .form-check-label{
     font-size: 2rem;
-  } */
+  }
 
 }
