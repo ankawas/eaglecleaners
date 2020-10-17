@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .btnCleaner {
   color: white;
-  background-color: #617BFF;
+  background-color: #8B9CF0;
   margin-right: 10%;
 }
 
@@ -202,6 +202,14 @@ a:link {
 
 /* For Mobiles */
 @media (max-width: 1208px) {
+  h3{
+    font-size: 3.5rem;
+  }
+
+  p{
+    font-size: 2rem;
+  }
+
   .navbar {
     padding: 0 10%;
   }
@@ -259,14 +267,14 @@ a:link {
 
   .mainHeader {
     /* font-family: "Montserrat-Bold"; */
-    font-size: 4rem;
+    font-size: 7rem;
     color: white;
     text-align: center;
   }
 
   .mainSubHeader {
     font-family: "Montserrat";
-    font-size: 3rem;
+    font-size: 4rem;
     color: white;
     text-align: center;
   }
@@ -275,4 +283,23 @@ a:link {
     text-align: center;
   }
 
+  .downloadButton{
+    display: block;
+    /* width: 50%; */
+    /* text-align: center; */
+    margin: 5% auto;
+    font-size: 2rem;
+  }
+
+  .downloadButtonFooter{
+    display: block;
+    /* width: 50%; */
+    /* text-align: center; */
+    margin: 5% auto;
+    font-size: 2rem;
+  }
+
+  .pricingText{
+    font-size: 4rem;
+  }
 }

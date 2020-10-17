@@ -24,9 +24,10 @@ h5{
 }
 
 .filterColumn{
-  background-color: #4ED4BB;
+  background-color: #1D2A69;
   text-align: left;
   padding: 2% 5%;
+  color: white;
 }
 
 .form-check-label{
@@ -42,4 +43,27 @@ h5{
 .bidList{
   padding-top: 4%;
   padding-right: 10%;
+}
+
+@media (max-width: 1208px) {
+  /* h1{
+    font-size: 5rem;
+  }
+
+  h3{
+    font-size: 3.5rem;
+  }
+
+  p{
+    font-size: 2rem;
+  }
+
+  .form-check-input{
+    font-size: 2rem;
+  }
+
+  .form-check-label{
+    font-size: 2rem;
+  } */
+
 }

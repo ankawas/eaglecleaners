@@ -31,8 +31,9 @@ body {
 }
 
 .estimateContainer {
-  background-color: #4ED4BB;
+  background-color: #1D2A69;
   border-radius: 10%;
+  color: white;
 }
 
 .input-box {
